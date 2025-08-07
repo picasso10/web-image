@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Galeria de Imagens</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f4f4; padding: 20px; }
+        h1 { text-align: center; }
+        .galeria { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+        .imagem { background: white; padding: 10px; border: 1px solid #ccc; text-align: center; width: 220px; }
+        .imagem img { max-width: 200px; height: auto; }
+        input { width: 100%; padding: 5px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Galeria de Imagens para Power BI</h1>
+    <p style="text-align: center;">Clique e copie o link da imagem para usar no Power BI.</p>
+    <div class="galeria">
+        <div class="imagem">
+            <img src="imagens/exemplo1.png" alt="Exemplo 1">
+            <input type="text" value="imagens/exemplo1.png" readonly onclick="this.select();document.execCommand('copy');">
+        </div>
+        <div class="imagem">
+            <img src="imagens/exemplo2.png" alt="Exemplo 2">
+            <input type="text" value="imagens/exemplo2.png" readonly onclick="this.select();document.execCommand('copy');">
+        </div>
+    </div>
+</body>
+</html>
